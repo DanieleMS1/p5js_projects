@@ -6,6 +6,7 @@ let counter = 0;    //make the whole thing rotate
 let spacing = 20;   //spacing between dots
 let rot = 20;       //angle between dots
 let off_rot = 10;   // angle between lines and dots
+let speed = 0.5;    // speed of rotation
 
 
 
@@ -20,8 +21,8 @@ function draw() {
 
   fill(255);
   noStroke();
-  rotate(counter);
-  for (let j = 0; j < 360/rot; j++) {
+  rotate(counter * speed);
+  for (let j = 0; j < 360 / rot; j++) {
     rotate(rot);
     for (let i = 2; i < num; i++) {
       ellipse(spacing * i, 0, size / i);
@@ -30,7 +31,7 @@ function draw() {
       strokeWeight(abs(cos(counter)));
       stroke(255);
       rotate(off_rot);
-      line(20,0,150*abs(cos(counter))+10,0);
+      line(20, 0, 150 * abs(cos(counter)) + 10, 0);
       pop()
     }
   }
