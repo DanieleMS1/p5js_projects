@@ -19,7 +19,7 @@ let text_size = 0.125 * canvas_w;
 let arc_size = 0.02 * canvas_w;
 let bar_size = 0.025 * canvas_w;
 
-
+//commento di prova
 function setup() {
   createCanvas(canvas_w, canvas_h);
 }
