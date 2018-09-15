@@ -2,7 +2,7 @@ let canvas_w = 201;
 let canvas_h = 201;
 let cols;
 let rows;
-let s = 20;
+let s;
 let grid;
 
 function make_2d_array(cols, rows) {
@@ -18,6 +18,7 @@ function make_2d_array(cols, rows) {
 
 
 function setup() {
+  s = floor(canvas_w / 10);
   createCanvas(canvas_w, canvas_h);
   cols = floor(width / s);
   rows = floor(height / s);
