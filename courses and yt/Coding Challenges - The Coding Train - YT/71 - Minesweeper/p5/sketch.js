@@ -11,6 +11,7 @@ function make_2d_array(cols, rows) {
     arr[i] = new Array(rows);
   }
   return arr;
+  
 }
 
 
