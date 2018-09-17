@@ -26,9 +26,11 @@ function Cell(i, j, s) {
         fill(200);
         rect(this.x, this.y, this.s, this.s);
         textAlign(CENTER);
-        textSize(s/2);
+        textSize(s / 2);
         fill(0);
-        text(this.neighbor_count, this.x + this.s * 0.5, this.y + this.s * 0.7);
+        if (this.neighbor_count != 0) {
+          text(this.neighbor_count, this.x + this.s * 0.5, this.y + this.s * 0.7);
+        }
       }
     }
   }
